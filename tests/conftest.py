@@ -6,6 +6,7 @@ from app.services.processor import DataProcessor
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
+
 @pytest.fixture
 def processor():
     """Возвращает свежий экземпляр DataProcessor для каждого теста."""
