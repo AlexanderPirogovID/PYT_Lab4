@@ -1,24 +1,10 @@
 import sys
 from pathlib import Path
-
-# Добавляем корень проекта в PYTHONPATH
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-from app.services.processor import DataProcessor
-
-
-
-
-
-
-
-
-
-
-
 import pytest
 from app.services.processor import DataProcessor
 
+
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 @pytest.fixture
 def processor():
