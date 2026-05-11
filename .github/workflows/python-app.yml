@@ -22,5 +22,7 @@ jobs:
       run: |
         mypy app/ main.py
     - name: Test with pytest and coverage
+      env:
+        PYTHONPATH: ${{ github.workspace }}
       run: |
         pytest
